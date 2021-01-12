@@ -5,17 +5,13 @@ const port = 3000
 
 app.use(bodyParser.urlencoded({ extended: false }))
 
-app.use(bodyParser.json())
-
 app.get('/', (req, res) => {
-  res.send('<form  method="POST">Nom: <input type="text" name="nom"><br><input type="submit" value="Send"></form>');
+  res.send('<form  method="POST">Nom: <input type="text" name="nom"><br><input type="submit" value="login"></form>');
 })
 
-app.post("/hola", (req, res) => {
-    res.header("Content-Type", "application/json");
-    res.send(JSON.stringify({
-        msg: "Hola " + req.body.name
-    }, null, 2));
+app.post("/", (req, res) => {
+	var nom = req.body.nom;
+    res.send("Hola " + nom);
 })
 
 
