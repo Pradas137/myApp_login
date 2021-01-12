@@ -1,0 +1,22 @@
+{
+  "name": "myapp_login",
+  "version": "0.0.1",
+  "description": "myapp_login",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Pradas137/myApp_login.git"
+  },
+  "author": "adrian",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Pradas137/myApp_login/issues"
+  },
+  "homepage": "https://github.com/Pradas137/myApp_login#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
